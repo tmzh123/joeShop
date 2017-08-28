@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>joeShop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Basic Styles-->    
+        <link href="{$smarty.const.PUBLIC_ADMIN_PATH}assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="{$smarty.const.PUBLIC_ADMIN_PATH}assets/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="{$smarty.const.PUBLIC_ADMIN_PATH}assets/css/weather-icons.min.css" rel="stylesheet" />
+
+            <!--Beyond styles-->
+        <link href="{$smarty.const.PUBLIC_ADMIN_PATH}assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
+        <link href="{$smarty.const.PUBLIC_ADMIN_PATH}assets/css/demo.min.css" rel="stylesheet" />
+        <link href="{$smarty.const.PUBLIC_ADMIN_PATH}assets/css/typicons.min.css" rel="stylesheet" />
+        <link href="{$smarty.const.PUBLIC_ADMIN_PATH}assets/css/animate.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- 加载转转圈 -->
+<div class="loading-container">
+    <div class="loading-progress">
+        <div class="rotator">
+            <div class="rotator">
+                <div class="rotator colored">
+                    <div class="rotator">
+                        <div class="rotator colored">
+                            <div class="rotator colored"></div>
+                            <div class="rotator"></div>
+                        </div>
+                        <div class="rotator colored"></div>
+                    </div>
+                    <div class="rotator"></div>
+                </div>
+                <div class="rotator"></div>
+            </div>
+            <div class="rotator"></div>
+        </div>
+        <div class="rotator"></div>
+    </div>
+</div>
+
+<div class="login-container animated fadeInDown" style="margin: 10% auto 0 auto;">
+    <div class="loginbox bg-white">
+        <div class="loginbox-title">登录</div>
+        <div class="loginbox-social">
+            <div class="social-title ">joe管理后台欢迎您!!!</div>
+        </div>
+        <div class="loginbox-or">
+            <div class="or-line"></div>
+        </div>
+        <form id="loginForm">
+            <div class="loginbox-textbox">
+                <input type="text" class="form-control" id="txt_LoginName" name="LoginName" placeholder="用户名"/>
+            </div>
+            <div class="loginbox-textbox">
+                <input type="password" class="form-control" id="txt_Password" name="Password" placeholder="密码"/>
+            </div>
+
+            <div class="loginbox-textbox">
+                <input type="text" class="form-control" id="txt_Code" name="Code" placeholder="验证码" style="width: 50%; float: left;" />
+                <img id="imgCode" src="/Home/SecurityCode" onclick="this.src = this.src + '?'" style="float: right; cursor: pointer;"/>
+                <div style=" clear: both;"></div>
+                
+            </div>
+            <div class="loginbox-submit">
+                <input type="button" class="btn btn-primary btn-block" id="btn-Login" value="登录"/>
+            </div>
+        </form>
+    </div>
+    <div class="logobox">
+
+    </div>
+
+</div>
+<div class="copyright-box">
+    版权所有 多米工作室 © Copyright 2016 - 2017. www.szcnct.com. All Rights Reserved.
+</div>
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="{$smarty.const.PUBLIC_ADMIN_PATH}assets/js/skins.min.js"></script>
+    
+    <!--Basic Scripts-->
+    <script src="{$smarty.const.PUBLIC_COMMON_PATH}jquery/jquery-2.0.3.min.js"></script>
+    <script src="{$smarty.const.PUBLIC_ADMIN_PATH}assets/js/bootstrap.min.js"></script>
+
+    <!--Beyond Scripts-->
+    <script src="{$smarty.const.PUBLIC_ADMIN_PATH}assets/js/beyond.min.js"></script>
+    
+    <!-- Custom Scripts-->    
+</body>
+</html>
