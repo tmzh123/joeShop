@@ -18,6 +18,11 @@ class GoodsController extends Controller{
     //put your code here
     
     public function index(){
+        
+        $goods = new \Model\GoodsModel();
+        $rows = $goods -> select();
+        
+        $this->assign('goodsList',$rows);
         $this->display();
     }
 }

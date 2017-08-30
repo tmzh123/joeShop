@@ -1,5 +1,28 @@
 {extends file="../layout/layout.html"}
 
 {block name="pagebody"}
-商品主页
+
+
+<div>
+    <table>
+        <tr>
+            <th>序号</th>
+            <th>商品名称</th>
+            <th>商品价格</th>
+            <th>商品图片</th>
+            <th>创建时间</th>
+        </tr>
+        {foreach $goodsList as $k=>$v}
+        <tr>
+            <td>{$v@iteration}</td>
+            <td>{$v.name}</td>
+            <td>{$v.price}</td>
+            <td>{$v.image}</td>
+            <td>{$v.create_time|date_format:"%Y-%m-%d"}</td>
+        </tr> 
+        {/foreach}
+    </table>
+</div>
+
+
 {/block}
